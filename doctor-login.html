@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartCare - Doctor Login</title>
+
+    <link rel="stylesheet" href="doctor-login.css">
+
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-card">
+
+            <div class="logo">
+                ❤️ SmartCare
+            </div>
+
+            <div class="doctor-icon">
+                👨‍⚕️
+            </div>
+
+            <h1>Doctor Login</h1>
+
+            <p>
+                Access your hospital dashboard
+            </p>
+
+
+            <!-- ================= LOGIN FORM ================= -->
+
+            <form id="doctorLoginForm">
+
+                <label for="doctorId">
+                    Doctor ID
+                </label>
+
+                <input
+                    type="text"
+                    id="doctorId"
+                    placeholder="Enter Doctor ID"
+                    required
+                >
+
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter Password"
+                    required
+                >
+
+
+                <button type="submit">
+                    Login
+                </button>
+
+
+                <p id="loginMessage"></p>
+
+            </form>
+
+
+            <!-- ================= ADD DOCTOR BUTTON ================= -->
+
+            <button
+                type="button"
+                class="add-doctor-btn"
+                onclick="openDoctorForm()">
+
+                + Add New Doctor
+
+            </button>
+
+
+            <div class="back-home">
+
+                <a href="index.html">
+                    ← Back to Home
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= ADD DOCTOR FORM ================= -->
+
+    <div
+        id="doctorForm"
+        class="doctor-form-overlay">
+
+
+        <div class="doctor-form-card">
+
+
+            <button
+                type="button"
+                class="close-btn"
+                onclick="closeDoctorForm()">
+
+                ×
+
+            </button>
+
+
+            <h2>
+                Add New Doctor
+            </h2>
+
+            <p>
+                Create a new doctor account
+            </p>
+
+
+            <form id="addDoctorForm">
+
+
+                <!-- Doctor Name -->
+
+                <label for="newDoctorName">
+                    Doctor Name
+                </label>
+
+                <input
+                    type="text"
+                    id="newDoctorName"
+                    placeholder="Enter doctor name"
+                    required
+                >
+
+
+                <!-- Doctor ID -->
+
+                <label for="newDoctorId">
+                    Doctor ID
+                </label>
+
+                <input
+                    type="text"
+                    id="newDoctorId"
+                    placeholder="Example: DOC005"
+                    required
+                >
+
+
+                <!-- Specialization -->
+
+                <label for="newDoctorSpecialization">
+                    Specialization
+                </label>
+
+                <select
+                    id="newDoctorSpecialization"
+                    required>
+
+                    <option value="">
+                        Select specialization
+                    </option>
+
+                    <option>
+                        General Physician
+                    </option>
+
+                    <option>
+                        Cardiologist
+                    </option>
+
+                    <option>
+                        Neurologist
+                    </option>
+
+                    <option>
+                        Dermatologist
+                    </option>
+
+                    <option>
+                        Pediatrician
+                    </option>
+
+                    <option>
+                        Orthopedic
+                    </option>
+
+                    <option>
+                        Gynecologist
+                    </option>
+
+                    <option>
+                        ENT Specialist
+                    </option>
+
+                </select>
+
+
+                <!-- Hospital -->
+
+                <label for="newDoctorHospital">
+                    Hospital
+                </label>
+
+                <input
+                    type="text"
+                    id="newDoctorHospital"
+                    placeholder="Enter hospital name"
+                    required
+                >
+
+
+                <!-- Phone -->
+
+                <label for="newDoctorPhone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="newDoctorPhone"
+                    placeholder="Enter phone number"
+                    required
+                >
+
+
+                <!-- Password -->
+
+                <label for="newDoctorPassword">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="newDoctorPassword"
+                    placeholder="Create password"
+                    required
+                >
+
+
+                <button
+                    type="submit"
+                    class="save-doctor-btn">
+
+                    Add Doctor
+
+                </button>
+
+
+                <p id="doctorAddMessage"></p>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="doctor-login.js"></script>
+
+</body>
+
+</html>

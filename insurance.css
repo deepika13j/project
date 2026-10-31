@@ -1,0 +1,201 @@
+/*====================================
+      SMARTCARE INSURANCE PAGE
+====================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:
+        radial-gradient(
+            circle at top left,
+            #17233d 0%,
+            #0b1220 45%,
+            #050914 100%
+        );
+}
+
+/* Header */
+
+header{
+    width:100%;
+    background:#10192F;
+    color:white;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
+    border-bottom:1px solid rgba(212,175,55,.2);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#D4AF37;
+}
+
+.logo i{
+    margin-right:10px;
+}
+
+/* Main Container */
+
+.container{
+    width:90%;
+    max-width:700px;
+    margin:40px auto;
+    background:#10192F;
+    border:1px solid rgba(212,175,55,.2);
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.45);
+}
+
+.container h1{
+    text-align:center;
+    color:#D4AF37;
+    margin-bottom:10px;
+}
+
+.container p{
+    text-align:center;
+    color:#B8C0D0;
+    margin-bottom:30px;
+}
+
+/* Hospital Card */
+
+.hospital-card{
+    background:rgba(212,175,55,.08);
+    border-left:5px solid #D4AF37;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:30px;
+}
+
+.hospital-card h2{
+    color:#D4AF37;
+    margin-bottom:10px;
+}
+
+.hospital-card p{
+    text-align:left;
+    color:#E5E7EB;
+    font-size:18px;
+}
+
+/* Form */
+
+.input-group{
+    margin-bottom:20px;
+}
+
+.input-group label{
+    display:block;
+    font-weight:600;
+    margin-bottom:8px;
+    color:#E5E7EB;
+}
+
+.input-group select,
+.input-group input{
+
+    width:100%;
+    padding:14px;
+    background:#0B132B;
+    color:#ffffff;
+    border:1px solid rgba(212,175,55,.25);
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+    transition:.3s;
+
+}
+
+.input-group select:focus,
+.input-group input:focus{
+
+    border-color:#D4AF37;
+    box-shadow:0 0 8px rgba(212,175,55,.25);
+
+}
+
+/* Status */
+
+#status{
+    font-weight:bold;
+}
+
+/* Buttons */
+
+button{
+
+    width:100%;
+    padding:15px;
+    margin-top:15px;
+
+    border:none;
+    border-radius:10px;
+
+    background:linear-gradient(90deg,#D4AF37,#F4C430);
+    color:#0A1428;
+    font-weight:600;
+
+    font-size:17px;
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:linear-gradient(90deg,#F4C430,#FFD700);
+
+}
+
+/* Accepted */
+
+.accepted{
+
+    color:#28a745;
+
+}
+
+/* Rejected */
+
+.rejected{
+
+    color:#dc3545;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.container{
+
+    width:95%;
+    padding:25px;
+
+}
+
+.logo{
+
+    font-size:22px;
+
+}
+
+.container h1{
+
+    font-size:28px;
+
+}
+
+}

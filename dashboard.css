@@ -1,0 +1,256 @@
+/*====================================
+      SMARTCARE DASHBOARD
+====================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:
+        radial-gradient(
+            circle at top left,
+            #17233d 0%,
+            #0b1220 45%,
+            #050914 100%
+        );
+}
+
+/* Header */
+
+header{
+    background:#10192F;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
+    border-bottom:1px solid rgba(212,175,55,.2);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#D4AF37;
+}
+
+.logo i{
+    margin-right:10px;
+}
+
+.header-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+#patientName{
+    font-size:17px;
+    font-weight:600;
+    color:#E5E7EB;
+}
+
+#logoutBtn{
+    padding:10px 18px;
+    border:none;
+    border-radius:8px;
+    background:linear-gradient(90deg,#D4AF37,#F4C430);
+    color:#0A1428;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+#logoutBtn:hover{
+    background:linear-gradient(90deg,#F4C430,#FFD700);
+}
+
+/* Welcome Section */
+
+.welcome{
+    text-align:center;
+    padding:50px 20px 20px;
+}
+
+.welcome h1{
+    color:#D4AF37;
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.welcome p{
+    color:#B8C0D0;
+    font-size:18px;
+}
+
+/* Dashboard Cards */
+
+.dashboard{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+/* Card */
+
+.card{
+    background:#10192F;
+    border:1px solid rgba(212,175,55,.15);
+    border-radius:18px;
+    padding:30px 20px;
+    text-align:center;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(212,175,55,.2);
+    border-color:#D4AF37;
+}
+
+.card i{
+    font-size:55px;
+    color:#D4AF37;
+    margin-bottom:20px;
+}
+
+.card h2{
+    color:#D4AF37;
+    margin-bottom:12px;
+}
+
+.card p{
+    color:#B8C0D0;
+    font-size:15px;
+    line-height:1.6;
+}
+
+/* Emergency Card */
+
+.emergency{
+    background:#dc3545;
+    color:white;
+}
+
+.emergency i,
+.emergency h2,
+.emergency p{
+    color:white;
+}
+
+.emergency:hover{
+    background:#bb2d3b;
+}
+
+/* Animation */
+
+.card{
+    animation:fadeUp .6s ease;
+}
+
+@keyframes fadeUp{
+
+from{
+    opacity:0;
+    transform:translateY(30px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+.logo{
+    font-size:24px;
+}
+
+.header-right{
+    flex-direction:column;
+}
+
+.welcome h1{
+    font-size:30px;
+}
+
+.dashboard{
+    width:95%;
+    grid-template-columns:1fr;
+}
+
+.card{
+    padding:25px;
+}
+
+}
+/* Dashboard Statistics */
+
+.stats{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.stat-card{
+    background:#10192F;
+    border:1px solid rgba(212,175,55,.15);
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+}
+
+.stat-card h2{
+    color:#D4AF37;
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    color:#B8C0D0;
+}
+
+/* Appointment Notification */
+
+.notification{
+    margin:30px auto;
+    max-width:700px;
+    background:rgba(212,175,55,.08);
+    border-left:5px solid #D4AF37;
+    padding:20px;
+    border-radius:10px;
+    text-align:left;
+}
+
+.notification h3{
+    color:#D4AF37;
+    margin-bottom:15px;
+}
+
+.notification p{
+    margin:8px 0;
+    color:#E5E7EB;
+}

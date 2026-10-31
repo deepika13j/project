@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Appointment</title>
+
+<link rel="stylesheet" href="booking.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<i class="fa-solid fa-heart-pulse"></i>
+SmartCare
+</div>
+
+</header>
+
+<div class="container">
+
+<h1>Book Appointment</h1>
+
+<div class="summary">
+
+<h2>Appointment Summary</h2>
+
+<p><strong>Hospital:</strong> <span id="hospitalName"></span></p>
+
+<p><strong>Doctor:</strong> <span id="doctorName"></span></p>
+
+<p><strong>Department:</strong> <span id="department"></span></p>
+
+</div>
+
+<form id="bookingForm">
+
+<div class="input-group">
+
+<label>Select Date</label>
+
+<input
+type="date"
+id="appointmentDate"
+required>
+
+</div>
+
+<div class="input-group">
+
+<label>Select Time</label>
+
+<select id="appointmentTime" required>
+
+<option value="">Choose Time</option>
+
+<option>09:00 AM</option>
+
+<option>10:00 AM</option>
+
+<option>11:00 AM</option>
+
+<option>12:00 PM</option>
+
+<option>02:00 PM</option>
+
+<option>03:00 PM</option>
+
+<option>04:00 PM</option>
+
+<option>05:00 PM</option>
+
+</select>
+
+</div>
+
+<div class="input-group">
+
+<label>Payment Method</label>
+
+<select id="paymentMethod">
+
+<option>Insurance</option>
+
+<option>Cash</option>
+
+<option>Credit / Debit Card</option>
+
+<option>UPI</option>
+
+</select>
+
+</div>
+
+<div class="input-group">
+
+<label>Additional Notes</label>
+
+<textarea
+id="remarks"
+rows="4"
+placeholder="Enter remarks (optional)"></textarea>
+
+</div>
+
+<button type="button" id="confirmBtn">
+
+Confirm Appointment
+
+</button>
+
+</form>
+
+</div>
+
+<script src="booking.js"></script>
+
+</body>
+
+</html>

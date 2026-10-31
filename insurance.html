@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Insurance Verification</title>
+
+<link rel="stylesheet" href="insurance.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<i class="fa-solid fa-heart-pulse"></i>
+
+SmartCare
+
+</div>
+
+</header>
+
+<div class="container">
+
+<h1>Insurance Verification</h1>
+
+<p>Verify your insurance before booking an appointment.</p>
+
+<div class="hospital-card">
+
+<h2>Selected Hospital</h2>
+
+<p id="hospitalName"></p>
+
+</div>
+
+<form id="insuranceForm">
+
+<div class="input-group">
+
+<label>Insurance Provider</label>
+
+<select id="provider" required>
+
+<option value="">Select Provider</option>
+
+<option>Star Health Insurance</option>
+
+<option>ICICI Lombard</option>
+
+<option>HDFC ERGO</option>
+
+<option>Care Health Insurance</option>
+
+<option>Niva Bupa</option>
+
+<option>Government Health Scheme</option>
+
+<option>None</option>
+
+</select>
+
+</div>
+
+<div class="input-group">
+
+<label>Policy Number</label>
+
+<input
+type="text"
+id="policy"
+placeholder="Enter Policy Number">
+
+</div>
+
+<div class="input-group">
+
+<label>Insurance Status</label>
+
+<input
+type="text"
+id="status"
+readonly>
+
+</div>
+
+<button type="button" id="verifyBtn">
+
+Verify Insurance
+
+</button>
+
+<button type="button" id="continueBtn">
+
+Continue to Doctor Selection
+
+</button>
+
+</form>
+
+</div>
+
+<script src="insurance.js"></script>
+
+</body>
+
+</html>

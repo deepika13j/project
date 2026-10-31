@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartCare - My Profile</title>
+
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+
+    <div class="profile-container">
+
+        <div class="logo">❤️ SmartCare</div>
+
+        <div class="profile-icon">👤</div>
+
+        <h1>My Profile</h1>
+
+        <p class="subtitle">View your patient information</p>
+
+        <div class="profile-details" id="profileDetails"></div>
+
+        <button class="back-button"
+            onclick="window.location.href='dashboard.html'">
+            ← Back to Dashboard
+        </button>
+
+    </div>
+
+    <script>
+        const patient = JSON.parse(
+            localStorage.getItem("loggedInPatient")
+        );
+
+        if (!patient) {
+            window.location.href = "login.html";
+        } else {
+            const details = document.getElementById("profileDetails");
+
+            const fields = [
+                ["Name", patient.name],
+                ["Email", patient.email],
+                ["Mobile", patient.phone],
+                ["Age", patient.age],
+                ["Gender", patient.gender]
+            ];
+
+            fields.forEach(([label, value]) => {
+                const item = document.createElement("div");
+                item.className = "profile-item";
+
+                const span = document.createElement("span");
+                span.textContent = label;
+
+                const strong = document.createElement("strong");
+                strong.textContent = value || "-";
+
+                item.appendChild(span);
+                item.appendChild(strong);
+                details.appendChild(item);
+            });
+        }
+    </script>
+
+</body>
+</html>

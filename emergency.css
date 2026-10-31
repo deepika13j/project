@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #111b30;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.emergency-container {
+    width: 100%;
+    max-width: 550px;
+    background: #1f2937;
+    padding: 35px;
+    border-radius: 16px;
+    border: 1px solid #374151;
+    text-align: center;
+}
+
+.logo {
+    color: #e7b92f;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.emergency-icon {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #e7b92f;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+.emergency-card {
+    background: #111b30;
+    border-left: 4px solid #e7b92f;
+    border-radius: 10px;
+    padding: 22px;
+    margin-bottom: 18px;
+}
+
+.emergency-card h2 {
+    color: #e7b92f;
+    font-size: 19px;
+}
+
+.emergency-card p {
+    color: #cbd5e1;
+    margin: 8px 0;
+}
+
+.emergency-card h3 {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.call-button {
+    display: inline-block;
+    background: #e7b92f;
+    color: #111827;
+    text-decoration: none;
+    padding: 11px 25px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.call-button:hover {
+    background: #facc15;
+}
+
+.emergency-note {
+    background: #30394a;
+    padding: 15px;
+    border-radius: 8px;
+    color: #e2e8f0;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.back-button {
+    width: 100%;
+    padding: 13px;
+    margin-top: 22px;
+    background: #e7b92f;
+    color: #111827;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}

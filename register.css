@@ -1,0 +1,407 @@
+/* ==========================================
+   SMARTCARE PATIENT REGISTRATION
+   DARK CONCIERGE THEME
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            #17233d 0%,
+            #0b1220 45%,
+            #050914 100%
+        );
+
+    color: #f5f1e8;
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.register-container {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+/* ==========================================
+   CARD
+========================================== */
+
+.register-card {
+
+    width: 100%;
+
+    max-width: 560px;
+
+    padding: 50px 60px;
+
+    background: #0d1628;
+
+    border: 1px solid
+        rgba(214, 183, 106, 0.35);
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 25px 70px
+        rgba(0, 0, 0, 0.55);
+
+    text-align: center;
+}
+
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo {
+
+    font-size: 38px;
+
+    font-weight: 700;
+
+    color: #d6b76a;
+
+    margin-bottom: 30px;
+}
+
+
+/* ==========================================
+   ICON
+========================================== */
+
+.patient-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    margin: auto;
+
+    margin-bottom: 15px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 30px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(214, 183, 106, 0.10);
+
+    border: 1px solid
+        rgba(214, 183, 106, 0.25);
+}
+
+
+/* ==========================================
+   HEADING
+========================================== */
+
+.register-card h1 {
+
+    font-size: 38px;
+
+    color: #f5f1e8;
+
+    margin-bottom: 8px;
+}
+
+
+.register-card > p {
+
+    color: #9da8ba;
+
+    margin-bottom: 25px;
+}
+
+
+/* ==========================================
+   FORM
+========================================== */
+
+#registerForm {
+
+    display: flex;
+
+    flex-direction: column;
+
+    text-align: left;
+}
+
+
+/* ==========================================
+   LABEL
+========================================== */
+
+#registerForm label {
+
+    margin-top: 15px;
+
+    margin-bottom: 7px;
+
+    color: #d6b76a;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   INPUT + SELECT
+========================================== */
+
+#registerForm input,
+#registerForm select {
+
+    width: 100%;
+
+    height: 52px;
+
+    padding: 0 16px;
+
+    background: #080f1d;
+
+    color: #f5f1e8;
+
+    border: 1px solid #334158;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+
+#registerForm input::placeholder {
+
+    color: #68758a;
+}
+
+
+#registerForm input:focus,
+#registerForm select:focus {
+
+    border-color: #d6b76a;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(214, 183, 106, 0.08);
+}
+
+
+#registerForm select option {
+
+    background: #0d1628;
+
+    color: #f5f1e8;
+}
+
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+#registerForm button {
+
+    width: 100%;
+
+    height: 54px;
+
+    margin-top: 28px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d6b76a,
+            #b99a5b
+        );
+
+    color: #07101d;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#registerForm button:hover {
+
+    background:
+        linear-gradient(
+            135deg,
+            #e5cb8a,
+            #d6b76a
+        );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px
+        rgba(214, 183, 106, 0.20);
+}
+
+
+/* ==========================================
+   MESSAGE
+========================================== */
+
+#registerMessage {
+
+    text-align: center;
+
+    margin-top: 15px;
+
+    min-height: 22px;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   LOGIN
+========================================== */
+
+.login-section {
+
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid
+        rgba(214, 183, 106, 0.20);
+
+    text-align: center;
+}
+
+
+.login-section p {
+
+    color: #9da8ba;
+
+    margin-bottom: 7px;
+}
+
+
+.login-section a {
+
+    color: #d6b76a;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+.login-section a:hover {
+
+    color: #e5cb8a;
+
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   BACK HOME
+========================================== */
+
+.back-home {
+
+    margin-top: 20px;
+
+    text-align: center;
+}
+
+
+.back-home a {
+
+    color: #c9d2df;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+
+.back-home a:hover {
+
+    color: #d6b76a;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .register-container {
+
+        padding: 20px;
+    }
+
+    .register-card {
+
+        padding: 40px 25px;
+
+        border-radius: 20px;
+    }
+
+    .logo {
+
+        font-size: 32px;
+    }
+
+    .register-card h1 {
+
+        font-size: 30px;
+    }
+
+}

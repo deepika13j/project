@@ -1,0 +1,483 @@
+/* =========================================
+   SMARTCARE DOCTOR PAGE
+   DARK CONCIERGE THEME
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+
+    font-family: "Poppins", Arial, sans-serif;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #050b16,
+            #0d1729,
+            #07101d
+        );
+
+    color: #f5f1e8;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+
+    height: 105px;
+
+    padding: 0 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: #0d1729;
+
+    border-bottom:
+        1px solid
+        rgba(214, 183, 106, 0.4);
+}
+
+
+.logo {
+
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+
+    font-weight: bold;
+
+    color: #d6b76a;
+}
+
+
+.logo span {
+
+    font-size: 34px;
+
+    margin-right: 8px;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+nav {
+
+    display: flex;
+
+    gap: 30px;
+}
+
+
+nav a {
+
+    text-decoration: none;
+
+    color: #f5f1e8;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+
+    color: #d6b76a;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+.doctor-page {
+
+    width: 90%;
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 65px 0 90px;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.doctor-heading {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.doctor-heading h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 48px;
+
+    color: #d6b76a;
+
+    margin-bottom: 12px;
+}
+
+
+.doctor-heading p {
+
+    font-size: 18px;
+
+    color: #bdc6d4;
+}
+
+
+/* =========================================
+   HOSPITAL INFORMATION
+========================================= */
+
+.hospital-info {
+
+    width: 100%;
+
+    padding: 25px 30px;
+
+    margin-bottom: 35px;
+
+    background: #111d32;
+
+    border-left:
+        5px solid
+        #d6b76a;
+
+    border-top:
+        1px solid
+        rgba(214, 183, 106, 0.25);
+
+    border-right:
+        1px solid
+        rgba(214, 183, 106, 0.25);
+
+    border-bottom:
+        1px solid
+        rgba(214, 183, 106, 0.25);
+
+    border-radius: 12px;
+}
+
+
+.hospital-info h2 {
+
+    color: #d6b76a;
+
+    font-family: Georgia, serif;
+
+    font-size: 22px;
+
+    margin-bottom: 8px;
+}
+
+
+.hospital-info p {
+
+    color: #f5f1e8;
+
+    font-size: 20px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+   DOCTOR GRID
+========================================= */
+
+.doctor-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 28px;
+}
+
+
+/* =========================================
+   DOCTOR CARD
+========================================= */
+
+.doctor-card {
+
+    background:
+        linear-gradient(
+            145deg,
+            #111d32,
+            #091322
+        );
+
+    border:
+        1px solid
+        rgba(214, 183, 106, 0.3);
+
+    border-radius: 16px;
+
+    padding: 30px;
+
+    min-height: 330px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.doctor-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #d6b76a;
+
+    box-shadow:
+        0 18px 40px
+        rgba(0, 0, 0, 0.5);
+}
+
+
+/* =========================================
+   DOCTOR ICON
+========================================= */
+
+.doctor-icon {
+
+    width: 85px;
+
+    height: 85px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        rgba(214, 183, 106, 0.1);
+
+    border:
+        1px solid
+        rgba(214, 183, 106, 0.4);
+
+    font-size: 42px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   DOCTOR NAME
+========================================= */
+
+.doctor-card h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 24px;
+
+    color: #f5f1e8;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================
+   SPECIALIZATION
+========================================= */
+
+.doctor-card .specialization {
+
+    color: #d6b76a;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+
+.doctor-card .hospital-name {
+
+    color: #aeb8c7;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   SELECT DOCTOR BUTTON
+========================================= */
+
+.doctor-card button {
+
+    width: 100%;
+
+    margin-top: auto;
+
+    padding: 13px;
+
+    border: 1px solid #d6b76a;
+
+    border-radius: 8px;
+
+    background: #d6b76a;
+
+    color: #07101d;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.doctor-card button:hover {
+
+    background: #ead38f;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   NO DOCTORS
+========================================= */
+
+.no-doctors {
+
+    grid-column: 1 / -1;
+
+    text-align: center;
+
+    padding: 50px;
+
+    color: #bdc6d4;
+
+    border:
+        1px solid
+        rgba(214, 183, 106, 0.25);
+
+    border-radius: 12px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+
+    .doctor-container {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    header {
+
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .logo {
+
+        font-size: 30px;
+    }
+
+
+    nav {
+
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .doctor-page {
+
+        padding: 45px 0;
+    }
+
+
+    .doctor-heading h1 {
+
+        font-size: 34px;
+    }
+
+
+    .doctor-heading p {
+
+        font-size: 15px;
+    }
+
+
+    .doctor-container {
+
+        grid-template-columns: 1fr;
+    }
+
+}

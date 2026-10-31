@@ -1,0 +1,578 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            #17233d 0%,
+            #0b1220 45%,
+            #050914 100%
+        );
+}
+
+
+/* =========================================
+   LOGIN PAGE
+========================================= */
+
+.login-container {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+.login-card {
+    width: 430px;
+
+    background: #10192F;
+
+    border: 1px solid rgba(212, 175, 55, 0.2);
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.45);
+
+    text-align: center;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+    font-size: 27px;
+
+    font-weight: 700;
+
+    color: #D4AF37;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   DOCTOR ICON
+========================================= */
+
+.doctor-icon {
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background: rgba(212, 175, 55, 0.15);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 42px;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.login-card h1 {
+    color: #ffffff;
+
+    font-size: 32px;
+
+    margin-bottom: 8px;
+}
+
+
+.login-card > p {
+    color: #B8C0D0;
+
+    margin-bottom: 30px;
+
+    font-size: 15px;
+}
+
+
+/* =========================================
+   LOGIN FORM
+========================================= */
+
+#doctorLoginForm {
+    text-align: left;
+}
+
+
+#doctorLoginForm label {
+    display: block;
+
+    color: #E5E7EB;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+
+    margin-top: 18px;
+}
+
+
+#doctorLoginForm input {
+    width: 100%;
+
+    height: 55px;
+
+    padding: 0 16px;
+
+    background: #0B132B;
+
+    color: #ffffff;
+
+    border: 2px solid rgba(212, 175, 55, 0.25);
+
+    border-radius: 12px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+#doctorLoginForm input:focus {
+    border-color: #D4AF37;
+
+    box-shadow:
+        0 0 0 4px rgba(212, 175, 55, 0.15);
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+========================================= */
+
+#doctorLoginForm > button[type="submit"] {
+    width: 100%;
+
+    height: 55px;
+
+    margin-top: 25px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        90deg,
+        #D4AF37,
+        #F4C430
+    );
+
+    color: #0A1428;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#doctorLoginForm > button[type="submit"]:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(212, 175, 55, 0.35);
+}
+
+
+/* =========================================
+   LOGIN MESSAGE
+========================================= */
+
+#loginMessage {
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-size: 14px;
+
+    min-height: 20px;
+}
+
+
+/* =========================================
+   ADD DOCTOR BUTTON
+========================================= */
+
+.add-doctor-btn {
+    width: 100%;
+
+    height: 55px;
+
+    margin-top: 15px;
+
+    border: 2px solid #D4AF37;
+
+    border-radius: 30px;
+
+    background: transparent;
+
+    color: #D4AF37;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.add-doctor-btn:hover {
+    background: rgba(212, 175, 55, 0.12);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   BACK HOME
+========================================= */
+
+.back-home {
+    margin-top: 20px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+
+    text-align: center;
+}
+
+
+.back-home a {
+    color: #D4AF37;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 500;
+}
+
+
+.back-home a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   ADD DOCTOR POPUP OVERLAY
+========================================= */
+
+.doctor-form-overlay {
+
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(5, 9, 20, 0.75);
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 9999;
+
+    padding: 20px;
+
+    overflow-y: auto;
+}
+
+
+/* =========================================
+   ADD DOCTOR CARD
+========================================= */
+
+.doctor-form-card {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 500px;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    background: #10192F;
+
+    border: 1px solid rgba(212, 175, 55, 0.2);
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.5);
+
+    animation: popupAnimation 0.25s ease;
+
+    text-align: left;
+}
+
+
+/* =========================================
+   POPUP ANIMATION
+========================================= */
+
+@keyframes popupAnimation {
+
+    from {
+        opacity: 0;
+
+        transform: scale(0.90);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: scale(1);
+    }
+}
+
+
+/* =========================================
+   POPUP TITLE
+========================================= */
+
+.doctor-form-card h2 {
+
+    color: #D4AF37;
+
+    font-size: 27px;
+
+    margin-bottom: 5px;
+}
+
+
+.doctor-form-card > p {
+
+    color: #B8C0D0;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   CLOSE BUTTON
+========================================= */
+
+.close-btn {
+
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    width: 38px;
+    height: 38px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #0B132B;
+
+    color: #E5E7EB;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.2s;
+}
+
+
+.close-btn:hover {
+
+    background: #fee2e2;
+
+    color: #dc2626;
+}
+
+
+/* =========================================
+   ADD DOCTOR FORM
+========================================= */
+
+#addDoctorForm label {
+
+    display: block;
+
+    color: #E5E7EB;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-top: 15px;
+
+    margin-bottom: 7px;
+}
+
+
+#addDoctorForm input,
+#addDoctorForm select {
+
+    width: 100%;
+
+    height: 50px;
+
+    padding: 0 14px;
+
+    border: 2px solid rgba(212, 175, 55, 0.25);
+
+    border-radius: 11px;
+
+    background: #0B132B;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+
+#addDoctorForm input:focus,
+#addDoctorForm select:focus {
+
+    border-color: #D4AF37;
+
+    box-shadow:
+        0 0 0 4px rgba(212, 175, 55, 0.15);
+}
+
+
+/* =========================================
+   ADD DOCTOR SUBMIT BUTTON
+========================================= */
+
+.save-doctor-btn {
+
+    width: 100%;
+
+    height: 52px;
+
+    margin-top: 25px;
+
+    border: none;
+
+    border-radius: 28px;
+
+    background: linear-gradient(
+        90deg,
+        #D4AF37,
+        #F4C430
+    );
+
+    color: #0A1428;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.save-doctor-btn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(212, 175, 55, 0.35);
+}
+
+
+/* =========================================
+   ADD DOCTOR MESSAGE
+========================================= */
+
+#doctorAddMessage {
+
+    text-align: center;
+
+    margin-top: 12px;
+
+    font-size: 14px;
+
+    min-height: 20px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .login-container {
+        padding: 15px;
+    }
+
+    .login-card {
+        width: 100%;
+
+        padding: 30px 22px;
+    }
+
+    .login-card h1 {
+        font-size: 27px;
+    }
+
+    .doctor-form-card {
+        padding: 28px 20px;
+    }
+
+}

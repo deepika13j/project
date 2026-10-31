@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Appointment Confirmation</title>
+
+<link rel="stylesheet" href="confirmation.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<i class="fa-solid fa-heart-pulse"></i>
+
+SmartCare
+
+</div>
+
+</header>
+
+<div class="container">
+
+<div class="success">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h1>Appointment Confirmed!</h1>
+
+<p>Your appointment has been booked successfully.</p>
+
+</div>
+<div class="patient-details">
+
+    <h2>Patient Details</h2>
+
+    <div class="detail-row">
+        <span>Patient Name</span>
+        <strong id="patientName">-</strong>
+    </div>
+
+    <div class="detail-row">
+        <span>Email</span>
+        <strong id="patientEmail">-</strong>
+    </div>
+
+    <div class="detail-row">
+        <span>Mobile Number</span>
+        <strong id="patientMobile">-</strong>
+    </div>
+
+</div>
+
+<div class="details">
+
+<h2>Appointment Details</h2>
+
+<table>
+
+<tr>
+
+<th>Appointment ID</th>
+
+<td id="appointmentId"></td>
+
+</tr>
+
+<tr>
+
+<th>Hospital</th>
+
+<td id="hospital"></td>
+
+</tr>
+
+<tr>
+
+<th>Doctor</th>
+
+<td id="doctor"></td>
+
+</tr>
+
+<tr>
+
+<th>Department</th>
+
+<td id="department"></td>
+
+</tr>
+
+<tr>
+
+<th>Date</th>
+
+<td id="date"></td>
+
+</tr>
+
+<tr>
+
+<th>Time</th>
+
+<td id="time"></td>
+
+</tr>
+
+<tr>
+
+<th>Payment</th>
+
+<td id="payment"></td>
+
+</tr>
+
+<tr>
+
+<th>Insurance</th>
+
+<td id="insurance"></td>
+
+</tr>
+
+<tr>
+
+<th>Remarks</th>
+
+<td id="remarks"></td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="buttons">
+
+<button id="downloadBtn">
+
+<i class="fa-solid fa-download"></i>
+
+Download Receipt
+
+</button>
+
+<button id="homeBtn">
+
+<i class="fa-solid fa-house"></i>
+
+Back to Home
+
+</button>
+
+</div>
+
+</div>
+
+<script src="confirmation.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,367 @@
+/* ==========================================
+   SMARTCARE PATIENT LOGIN
+   DARK CONCIERGE THEME
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            #17233d 0%,
+            #0b1220 45%,
+            #050914 100%
+        );
+
+    color: #f5f1e8;
+}
+
+
+/* ==========================================
+   LOGIN CONTAINER
+========================================== */
+
+.login-container {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+/* ==========================================
+   LOGIN CARD
+========================================== */
+
+.login-card {
+    width: 100%;
+    max-width: 560px;
+
+    padding: 55px 60px;
+
+    background: #0d1628;
+
+    border: 1px solid rgba(214, 183, 106, 0.35);
+
+    border-radius: 28px;
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.55);
+
+    text-align: center;
+}
+
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo {
+    font-size: 40px;
+
+    font-weight: 700;
+
+    color: #d6b76a;
+
+    margin-bottom: 35px;
+}
+
+
+/* ==========================================
+   PATIENT ICON
+========================================== */
+
+.patient-icon {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+
+    border-radius: 50%;
+
+    background: rgba(214, 183, 106, 0.10);
+
+    border: 1px solid rgba(214, 183, 106, 0.25);
+}
+
+
+/* ==========================================
+   HEADING
+========================================== */
+
+.login-card h1 {
+    font-size: 42px;
+
+    margin-bottom: 10px;
+
+    color: #f5f1e8;
+}
+
+
+.login-card > p {
+    color: #9da8ba;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    margin-bottom: 35px;
+}
+
+
+/* ==========================================
+   FORM
+========================================== */
+
+#loginForm {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    text-align: left;
+}
+
+
+/* ==========================================
+   LABEL
+========================================== */
+
+#loginForm label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    margin-top: 18px;
+
+    color: #d6b76a;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   INPUT
+========================================== */
+
+#loginForm input {
+    width: 100%;
+
+    height: 55px;
+
+    padding: 0 18px;
+
+    background: #080f1d;
+
+    color: #f5f1e8;
+
+    border: 1px solid #334158;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+
+#loginForm input::placeholder {
+    color: #68758a;
+}
+
+
+#loginForm input:focus {
+    border-color: #d6b76a;
+
+    box-shadow:
+        0 0 0 3px rgba(214, 183, 106, 0.08);
+}
+
+
+/* ==========================================
+   LOGIN BUTTON
+========================================== */
+
+#loginForm button {
+    width: 100%;
+
+    height: 55px;
+
+    margin-top: 28px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d6b76a,
+            #b99a5b
+        );
+
+    color: #07101d;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#loginForm button:hover {
+    background:
+        linear-gradient(
+            135deg,
+            #e5cb8a,
+            #d6b76a
+        );
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(214, 183, 106, 0.20);
+}
+
+
+/* ==========================================
+   LOGIN MESSAGE
+========================================== */
+
+#loginMessage {
+    text-align: center;
+
+    margin-top: 15px;
+
+    min-height: 24px;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   REGISTER
+========================================== */
+
+.register-section {
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(214, 183, 106, 0.25);
+
+    text-align: center;
+}
+
+
+.register-section p {
+    color: #9da8ba;
+
+    margin-bottom: 8px;
+}
+
+
+.register-section a {
+    color: #d6b76a;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+
+.register-section a:hover {
+    color: #e5cb8a;
+
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   BACK HOME
+========================================== */
+
+.back-home {
+    margin-top: 25px;
+
+    text-align: center;
+}
+
+
+.back-home a {
+    color: #c9d2df;
+
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+
+.back-home a:hover {
+    color: #d6b76a;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .login-container {
+        padding: 20px;
+    }
+
+    .login-card {
+        padding: 40px 25px;
+
+        border-radius: 20px;
+    }
+
+    .logo {
+        font-size: 32px;
+    }
+
+    .login-card h1 {
+        font-size: 32px;
+    }
+
+    .login-card > p {
+        font-size: 14px;
+    }
+
+    #loginForm input,
+    #loginForm button {
+        height: 52px;
+    }
+}

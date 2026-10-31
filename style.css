@@ -1,0 +1,863 @@
+/* =====================================================
+   SMARTCARE - ORIGINAL INDEX PAGE CSS
+===================================================== */
+
+:root {
+    --primary: #070c1b;
+    --secondary: #0F766E;
+    --accent: #34D399;
+    --background: #F0FDFA;
+    --white: #ffffff;
+    --text: #1F2937;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background:
+        radial-gradient(
+            circle at top left,
+            #17233d 0%,
+            #0b1220 45%,
+            #050914 100%
+        );
+
+    color: var(--text);
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 18px 8%;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    backdrop-filter: blur(15px);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.logo i {
+    margin-right: 8px;
+}
+
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+
+    align-items: center;
+
+    list-style: none;
+
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+
+    font-weight: 600;
+
+    color: #333;
+
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary);
+}
+
+
+/* =====================================================
+   LOGIN / REGISTER MENU
+===================================================== */
+
+.login-menu {
+    position: relative;
+
+    display: inline-block;
+}
+
+.login-main-btn {
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: #0F766E;
+
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.login-main-btn:hover {
+    background: #14B8A6;
+
+    transform: translateY(-2px);
+}
+
+
+.login-options {
+    display: none;
+
+    position: absolute;
+
+    right: 0;
+
+    top: 48px;
+
+    width: 180px;
+
+    background: white;
+
+    border-radius: 14px;
+
+    padding: 8px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+    z-index: 1000;
+}
+
+.login-options.show {
+    display: block;
+}
+
+.login-options a {
+    display: block;
+
+    padding: 12px 14px;
+
+    border-radius: 10px;
+
+    color: #1F2937;
+
+    text-decoration: none;
+
+    font-weight: 500;
+}
+
+.login-options a:hover {
+    background: #ECFDF5;
+
+    color: #0F766E;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 120px 8% 70px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #E6FFFA,
+            #FFFFFF
+        );
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 58px;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+
+    color: #1F2937;
+}
+
+.hero-text span {
+    display: block;
+
+    color: #0D6EFD;
+}
+
+.hero-text p {
+    font-size: 18px;
+
+    line-height: 30px;
+
+    color: #555;
+
+    margin-bottom: 30px;
+
+    max-width: 650px;
+}
+
+
+/* Hero image */
+
+.hero-image {
+    width: 45%;
+
+    text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+
+    max-width: 500px;
+
+    height: auto;
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.buttons {
+    display: flex;
+
+    gap: 15px;
+
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 15px 35px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #14B8A6,
+            #34D399
+        );
+
+    color: white;
+
+    border-radius: 40px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.4s;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 25px rgba(20, 184, 166, 0.4);
+}
+
+
+.btn2 {
+    display: inline-block;
+
+    padding: 14px 32px;
+
+    background: white;
+
+    color: #0F766E;
+
+    border: 2px solid #14B8A6;
+
+    border-radius: 40px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.btn2:hover {
+    background: #14B8A6;
+
+    color: white;
+}
+
+
+/* =====================================================
+   SERVICES
+===================================================== */
+
+.services {
+    width: 100%;
+
+    padding: 80px 8%;
+
+    background: #F8FBFF;
+
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 42px;
+
+    color: #0D6EFD;
+
+    margin-bottom: 50px;
+}
+
+.service-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(280px, 1fr)
+        );
+
+    gap: 30px;
+}
+
+.service-card {
+    background: #FFFFFF;
+
+    border-radius: 18px;
+
+    padding: 35px 25px;
+
+    transition: 0.4s;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+
+    cursor: pointer;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -100%;
+
+    width: 100%;
+
+    height: 5px;
+
+    background: #0D6EFD;
+
+    transition: 0.4s;
+}
+
+.service-card:hover::before {
+    left: 0;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 18px 35px rgba(13, 110, 253, 0.25);
+}
+
+.service-card i {
+    font-size: 55px;
+
+    color: #0D6EFD;
+
+    margin-bottom: 25px;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+
+    font-size: 24px;
+
+    color: #222;
+}
+
+.service-card p {
+    color: #666;
+
+    line-height: 26px;
+}
+
+
+/* =====================================================
+   STATISTICS
+===================================================== */
+
+.stats {
+    width: 100%;
+
+    padding: 70px 8%;
+
+    background: white;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            4,
+            1fr
+        );
+
+    gap: 25px;
+}
+
+.stat {
+    background:
+        linear-gradient(
+            135deg,
+            #0D6EFD,
+            #0096FF
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    transition: 0.4s;
+}
+
+.stat:hover {
+    transform: scale(1.05);
+}
+
+.stat h2 {
+    font-size: 50px;
+
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   HOW SMARTCARE WORKS
+===================================================== */
+
+.steps {
+    width: 100%;
+
+    padding: 90px 8%;
+
+    background: #EEF7FF;
+
+    text-align: center;
+}
+
+.steps h2 {
+    text-align: center;
+
+    color: #0D6EFD;
+
+    font-size: 42px;
+
+    margin-bottom: 60px;
+}
+
+.step-container {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            4,
+            1fr
+        );
+
+    gap: 30px;
+}
+
+.step {
+    background: white;
+
+    padding: 30px 20px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.step:hover {
+    transform: translateY(-8px);
+}
+
+.step h3 {
+    width: 60px;
+
+    height: 60px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #0D6EFD;
+
+    color: white;
+
+    font-size: 24px;
+}
+
+.step p {
+    color: #555;
+
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.cta {
+    width: 100%;
+
+    padding: 90px 8%;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0D6EFD,
+            #0096FF
+        );
+
+    color: white;
+}
+
+.cta h2 {
+    font-size: 45px;
+
+    margin-bottom: 20px;
+}
+
+.cta p {
+    max-width: 700px;
+
+    margin: auto;
+
+    margin-bottom: 35px;
+
+    line-height: 28px;
+}
+
+.cta .btn {
+    background: white;
+
+    color: #0D6EFD;
+}
+
+.cta .btn:hover {
+    background: #FFD43B;
+
+    color: #222;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    background: #062D72;
+
+    color: white;
+
+    padding: 50px 8%;
+
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin-bottom: 15px;
+
+    color: #E5E7EB;
+}
+
+.footer-icons {
+    margin: 25px 0;
+}
+
+.footer-icons i {
+    width: 45px;
+
+    height: 45px;
+
+    background: white;
+
+    color: #0D6EFD;
+
+    border-radius: 50%;
+
+    display: inline-flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin: 0 6px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.footer-icons i:hover {
+    background: #FFD43B;
+
+    transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 991px) {
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-top: 140px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 48px;
+    }
+
+    .hero-text p {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .hero-image {
+        width: 100%;
+
+        margin-top: 40px;
+    }
+
+    .hero-image img {
+        width: 70%;
+    }
+
+    .stats {
+        grid-template-columns:
+            repeat(
+                2,
+                1fr
+            );
+    }
+
+    .step-container {
+        grid-template-columns:
+            repeat(
+                2,
+                1fr
+            );
+    }
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .services h2,
+    .steps h2 {
+        font-size: 34px;
+    }
+
+    .cta h2 {
+        font-size: 36px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    header {
+        position: relative;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+
+        line-height: 26px;
+    }
+
+    .buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .btn,
+    .btn2 {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 90%;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+
+        padding: 50px 20px;
+    }
+
+    .step-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services {
+        padding: 60px 20px;
+    }
+
+    .steps {
+        padding: 60px 20px;
+    }
+
+    .cta {
+        padding: 60px 20px;
+    }
+
+    .cta h2 {
+        font-size: 30px;
+    }
+
+    footer {
+        padding: 40px 20px;
+    }
+}

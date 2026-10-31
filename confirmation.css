@@ -1,0 +1,259 @@
+/*====================================
+      SMARTCARE CONFIRMATION PAGE
+====================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:
+        radial-gradient(
+            circle at top left,
+            #17233d 0%,
+            #0b1220 45%,
+            #050914 100%
+        );
+}
+
+/* Header */
+
+header{
+    width:100%;
+    background:#10192F;
+    color:#fff !important;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
+    border-bottom:1px solid rgba(212,175,55,.2);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#D4AF37 !important;
+}
+
+.logo i{
+    margin-right:10px;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    max-width:900px;
+    margin:40px auto;
+    background:#10192F;
+    border:1px solid rgba(212,175,55,.2);
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
+}
+
+/* Success Section */
+
+.success{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.success i{
+    font-size:80px;
+    color:#28a745 !important;
+    margin-bottom:20px;
+}
+
+.success h1{
+    color:#D4AF37 !important;
+    margin-bottom:10px;
+}
+
+.success p{
+    color:#B8C0D0 !important;
+    font-size:18px;
+}
+
+/* Details */
+.patient-details {
+    margin-top: 30px;
+
+    padding: 25px;
+
+    background: #0d1628;
+
+    border: 1px solid rgba(214, 183, 106, 0.35);
+
+    border-radius: 16px;
+
+    text-align: left;
+}
+
+.patient-details h2 {
+    color: #d6b76a;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+.detail-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid rgba(214, 183, 106, 0.15);
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-row span {
+    color: #9da8ba;
+}
+
+.detail-row strong {
+    color: #f5f1e8;
+
+    text-align: right;
+}
+
+.details{
+    margin-top:20px;
+}
+
+.details h2{
+    color:#D4AF37 !important;
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th,
+table td{
+    border:1px solid rgba(212,175,55,.2);
+    padding:15px;
+    text-align:left;
+}
+
+table th{
+    background:#0B132B;
+    color:#D4AF37 !important;
+    width:35%;
+}
+
+table td{
+    color:#E5E7EB !important;
+    background:transparent;
+}
+
+table tr:nth-child(even) td{
+    background:rgba(212,175,55,.05);
+}
+
+/* Buttons */
+
+.buttons{
+    display:flex;
+    gap:20px;
+    margin-top:35px;
+}
+
+.buttons button{
+    flex:1;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
+}
+
+#downloadBtn{
+    background:#198754;
+    color:white !important;
+}
+
+#downloadBtn:hover{
+    background:#157347;
+}
+
+#homeBtn{
+    background:linear-gradient(90deg,#D4AF37,#F4C430);
+    color:#0A1428 !important;
+    font-weight:600;
+}
+
+#homeBtn:hover{
+    background:linear-gradient(90deg,#F4C430,#FFD700);
+}
+
+button i{
+    margin-right:8px;
+}
+
+/* Animation */
+
+.container{
+    animation:fadeIn .8s ease;
+}
+
+@keyframes fadeIn{
+
+from{
+    opacity:0;
+    transform:translateY(30px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.container{
+    width:95%;
+    padding:25px;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+.logo{
+    font-size:22px;
+}
+
+.success i{
+    font-size:60px;
+}
+
+.success h1{
+    font-size:28px;
+}
+
+table th,
+table td{
+    padding:10px;
+    font-size:14px;
+}
+
+}

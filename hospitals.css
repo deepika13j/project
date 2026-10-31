@@ -1,0 +1,403 @@
+/* =========================================
+   SMARTCARE
+   DARK CONCIERGE HOSPITAL PAGE
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+
+    font-family: "Poppins", Arial, sans-serif;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #050b16,
+            #0c1628,
+            #07101d
+        );
+
+    color: #f5f1e8;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+
+    width: 100%;
+
+    height: 105px;
+
+    padding: 0 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: #0d1729;
+
+    border-bottom:
+        1px solid
+        rgba(214, 183, 106, 0.4);
+}
+
+
+.logo {
+
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+
+    font-weight: bold;
+
+    color: #d6b76a;
+
+    letter-spacing: 1px;
+}
+
+
+.logo span {
+
+    font-size: 34px;
+
+    margin-right: 8px;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+nav a {
+
+    text-decoration: none;
+
+    color: #f5f1e8;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+
+    color: #d6b76a;
+}
+
+
+/* =========================================
+   MAIN PAGE
+========================================= */
+
+.hospital-page {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 70px 0;
+}
+
+
+/* =========================================
+   PAGE HEADING
+========================================= */
+
+.hospital-heading {
+
+    text-align: center;
+
+    margin-bottom: 55px;
+}
+
+
+.hospital-heading h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 48px;
+
+    font-weight: bold;
+
+    color: #d6b76a;
+
+    margin-bottom: 15px;
+}
+
+
+.hospital-heading p {
+
+    color: #c0c7d2;
+
+    font-size: 18px;
+}
+
+
+/* =========================================
+   HOSPITAL GRID
+========================================= */
+
+.hospital-container {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================================
+   HOSPITAL CARD
+========================================= */
+
+.hospital-card {
+
+    min-height: 320px;
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    background:
+        linear-gradient(
+            145deg,
+            #111d32,
+            #091322
+        );
+
+    border:
+        1px solid
+        rgba(214, 183, 106, 0.3);
+
+    border-radius: 16px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.hospital-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #d6b76a;
+
+    box-shadow:
+        0 18px 40px
+        rgba(0, 0, 0, 0.5);
+}
+
+
+/* =========================================
+   HOSPITAL ICON
+========================================= */
+
+.hospital-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(214, 183, 106, 0.1);
+
+    border:
+        1px solid
+        rgba(214, 183, 106, 0.35);
+
+    font-size: 30px;
+}
+
+
+/* =========================================
+   HOSPITAL NAME
+========================================= */
+
+.hospital-card h2 {
+
+    font-family: Georgia, serif;
+
+    color: #f5f1e8;
+
+    font-size: 25px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   HOSPITAL DETAILS
+========================================= */
+
+.hospital-card p {
+
+    color: #adb7c6;
+
+    font-size: 15px;
+
+    margin-bottom: 9px;
+}
+
+
+.hospital-card strong {
+
+    color: #d6b76a;
+}
+
+
+/* =========================================
+   SELECT BUTTON
+========================================= */
+
+.hospital-card button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 20px;
+
+    border: 1px solid #d6b76a;
+
+    border-radius: 8px;
+
+    background: #d6b76a;
+
+    color: #07101d;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.hospital-card button:hover {
+
+    background: #ead38f;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+
+    .hospital-container {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+    header {
+
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .logo {
+
+        font-size: 30px;
+    }
+
+
+    nav {
+
+        gap: 20px;
+    }
+
+
+    .hospital-page {
+
+        padding: 45px 0;
+    }
+
+
+    .hospital-heading h1 {
+
+        font-size: 34px;
+    }
+
+
+    .hospital-heading p {
+
+        font-size: 15px;
+    }
+
+
+    .hospital-container {
+
+        grid-template-columns: 1fr;
+    }
+
+}

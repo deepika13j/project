@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartCare | Hospital Recommendation & Appointment System</title>
+
+    <link rel="stylesheet" href="style1.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+
+        <i class="fa-solid fa-heart-pulse"></i>
+
+        SmartCare
+
+    </div>
+
+
+    <nav>
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#services">
+                    Services
+                </a>
+            </li>
+
+
+            <li>
+                <a href="symptoms.html">
+                    Symptoms
+                </a>
+            </li>
+
+
+            <li>
+                <a href="myappointments.html">
+                    Appointments
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#contact">
+                    Contact
+                </a>
+            </li>
+
+
+            <!-- LOGIN / REGISTER -->
+
+            <li>
+
+                <div class="login-menu">
+
+                    <button
+                        class="login-main-btn"
+                        onclick="toggleLoginMenu()">
+
+                        Login / Register ▾
+
+                    </button>
+
+
+                    <div
+                        id="loginOptions"
+                        class="login-options">
+
+                        <a href="login.html">
+                            👤 Patient
+                        </a>
+
+
+                        <a href="doctor-login.html">
+                            👨‍⚕️ Doctor
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+
+    <div class="hero-text">
+
+
+        <h1>
+
+            Exceptional Care, Made Simple.
+
+            <span>
+                Based on Your Symptoms
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            SmartCare analyzes your symptoms, recommends the correct
+            healthcare level, suggests nearby hospitals, verifies insurance,
+            recommends doctors and helps you book appointments.
+
+        </p>
+
+
+        <div class="buttons">
+
+
+            <a
+                href="register.html"
+                class="btn">
+
+                Get Started
+
+            </a>
+
+
+            <a
+                href="login.html"
+                class="btn2">
+
+                Patient Login
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <img
+            src="images/doctor.png"
+            alt="Doctor">
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+
+    <div class="stat">
+
+        <h2>
+            500+
+        </h2>
+
+        <p>
+            Doctors
+        </p>
+
+    </div>
+
+
+    <div class="stat">
+
+        <h2>
+            100+
+        </h2>
+
+        <p>
+            Hospitals
+        </p>
+
+    </div>
+
+
+    <div class="stat">
+
+        <h2>
+            10K+
+        </h2>
+
+        <p>
+            Patients
+        </p>
+
+    </div>
+
+
+    <div class="stat">
+
+        <h2>
+            24x7
+        </h2>
+
+        <p>
+            Support
+        </p>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================= SERVICES ================= -->
+
+<section
+    id="services"
+    class="services">
+
+
+    <h2>
+        Our Services
+    </h2>
+
+
+    <div class="service-container">
+
+
+        <div class="service-card">
+
+            <i class="fa-solid fa-stethoscope"></i>
+
+            <h3>
+                Symptom Analysis
+            </h3>
+
+            <p>
+                Analyze symptoms using SmartCare.
+            </p>
+
+        </div>
+
+
+
+        <div class="service-card">
+
+            <i class="fa-solid fa-hospital"></i>
+
+            <h3>
+                Hospital Recommendation
+            </h3>
+
+            <p>
+                Suggests hospitals based on healthcare level.
+            </p>
+
+        </div>
+
+
+
+        <div class="service-card">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <h3>
+                Nearby Hospitals
+            </h3>
+
+            <p>
+                Shows hospitals near your location.
+            </p>
+
+        </div>
+
+
+
+        <div class="service-card">
+
+            <i class="fa-solid fa-file-shield"></i>
+
+            <h3>
+                Insurance Verification
+            </h3>
+
+            <p>
+                Checks accepted insurance providers.
+            </p>
+
+        </div>
+
+
+
+        <div class="service-card">
+
+            <i class="fa-solid fa-user-doctor"></i>
+
+            <h3>
+                Doctor Recommendation
+            </h3>
+
+            <p>
+                Find specialist doctors easily.
+            </p>
+
+        </div>
+
+
+
+        <div class="service-card">
+
+            <i class="fa-solid fa-calendar-check"></i>
+
+            <h3>
+                Appointment Booking
+            </h3>
+
+            <p>
+                Book appointments in a few clicks.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================= STEPS ================= -->
+
+<section class="steps">
+
+
+    <h2>
+        How SmartCare Works
+    </h2>
+
+
+    <div class="step-container">
+
+
+        <div class="step">
+
+            <h3>
+                1
+            </h3>
+
+            <p>
+                Register Patient
+            </p>
+
+        </div>
+
+
+
+        <div class="step">
+
+            <h3>
+                2
+            </h3>
+
+            <p>
+                Enter Symptoms
+            </p>
+
+        </div>
+
+
+
+        <div class="step">
+
+            <h3>
+                3
+            </h3>
+
+            <p>
+                Healthcare Recommendation
+            </p>
+
+        </div>
+
+
+
+        <div class="step">
+
+            <h3>
+                4
+            </h3>
+
+            <p>
+                Insurance Verification
+            </p>
+
+        </div>
+
+
+
+        <div class="step">
+
+            <h3>
+                5
+            </h3>
+
+            <p>
+                Select Hospital
+            </p>
+
+        </div>
+
+
+
+        <div class="step">
+
+            <h3>
+                6
+            </h3>
+
+            <p>
+                Select Doctor
+            </p>
+
+        </div>
+
+
+
+        <div class="step">
+
+            <h3>
+                7
+            </h3>
+
+            <p>
+                Book Appointment
+            </p>
+
+        </div>
+
+
+
+        <div class="step">
+
+            <h3>
+                8
+            </h3>
+
+            <p>
+                Confirmation
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+
+    <h2>
+        Ready to Book Your Appointment?
+    </h2>
+
+
+    <p>
+
+        Start your healthcare journey with SmartCare today.
+
+    </p>
+
+
+    <a
+        href="register.html"
+        class="btn">
+
+        Book Now
+
+    </a>
+
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contact">
+
+
+    <h3>
+        SmartCare
+    </h3>
+
+
+    <p>
+
+        Hospital Recommendation & Appointment Booking System
+
+    </p>
+
+
+    <div class="footer-icons">
+
+
+        <i class="fa-brands fa-facebook"></i>
+
+        <i class="fa-brands fa-instagram"></i>
+
+        <i class="fa-brands fa-linkedin"></i>
+
+        <i class="fa-brands fa-x-twitter"></i>
+
+
+    </div>
+
+
+    <p>
+
+        © 2026 SmartCare. All Rights Reserved.
+
+    </p>
+
+
+</footer>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="script.js"></script>
+
+
+<script>
+
+function toggleLoginMenu() {
+
+    const menu =
+        document.getElementById("loginOptions");
+
+    menu.classList.toggle("show");
+
+}
+
+
+// Close menu when clicking outside
+
+document.addEventListener("click", function(event) {
+
+    const loginMenu =
+        document.querySelector(".login-menu");
+
+    const options =
+        document.getElementById("loginOptions");
+
+
+    if (!loginMenu.contains(event.target)) {
+
+        options.classList.remove("show");
+
+    }
+
+});
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartCare - Patient Login</title>
+
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="login-card">
+
+            <div class="logo">
+                ❤️ SmartCare
+            </div>
+
+            <div class="patient-icon">
+                👤
+            </div>
+
+            <h1>Patient Login</h1>
+
+            <p>
+                Login using your registered email and password
+            </p>
+
+            <form id="loginForm">
+
+                <!-- EMAIL -->
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your registered email"
+                    required
+                >
+
+                <!-- PASSWORD -->
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required
+                >
+
+                <!-- LOGIN BUTTON -->
+
+                <button type="submit" id="loginButton">
+                    Login
+                </button>
+
+                <p id="loginMessage"></p>
+
+            </form>
+
+            <!-- REGISTER -->
+
+            <div class="register-section">
+
+                <p>
+                    Don't have an account?
+                </p>
+
+                <a href="register.html">
+                    Register Now
+                </a>
+
+            </div>
+
+            <!-- HOME -->
+
+            <div class="back-home">
+
+                <a href="index.html">
+                    ← Back to Home
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+</html>

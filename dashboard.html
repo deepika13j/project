@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SmartCare Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        <i class="fa-solid fa-heart-pulse"></i>
+
+        SmartCare
+
+    </div>
+
+    <div class="header-right">
+
+        <span id="patientName">Patient</span>
+
+        <button id="logoutBtn">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            Logout
+
+        </button>
+
+    </div>
+
+</header>
+
+<section class="welcome">
+
+    <h1>Welcome to SmartCare 👋</h1>
+
+    <p>Your Health Companion</p>
+
+</section>
+
+<section class="dashboard">
+
+    <div class="card" onclick="location.href='profile.html'">
+
+        <i class="fa-solid fa-user"></i>
+
+        <h2>My Profile</h2>
+
+        <p>View and edit your profile information.</p>
+
+    </div>
+
+    <div class="card" onclick="location.href='myappointments.html'">
+
+        <i class="fa-solid fa-calendar-check"></i>
+
+        <h2>My Appointments</h2>
+
+        <p>Check upcoming and previous appointments.</p>
+
+    </div>
+
+    <div class="card" onclick="location.href='symptoms.html'">
+
+        <i class="fa-solid fa-stethoscope"></i>
+
+        <h2>Symptom Checker</h2>
+
+        <p>Analyze symptoms and get recommendations.</p>
+
+    </div>
+
+    <div class="card" onclick="location.href='hospitals.html'">
+
+        <i class="fa-solid fa-hospital"></i>
+
+        <h2>Hospitals</h2>
+
+        <p>Find nearby hospitals.</p>
+
+    </div>
+
+    <div class="card" onclick="location.href='insurance.html'">
+
+        <i class="fa-solid fa-file-shield"></i>
+
+        <h2>Insurance</h2>
+
+        <p>Manage your insurance details.</p>
+
+    </div>
+
+    <div class="card" onclick="location.href='doctor.html'">
+
+        <i class="fa-solid fa-user-doctor"></i>
+
+        <h2>Doctors</h2>
+
+        <p>View recommended doctors.</p>
+
+    </div>
+
+    <div class="card" onclick="location.href='booking.html'">
+
+        <i class="fa-solid fa-calendar-plus"></i>
+
+        <h2>Book Appointment</h2>
+
+        <p>Book a new appointment quickly.</p>
+
+    </div>
+
+    <div class="card emergency" onclick="location.href='emergency.html'">
+
+        <i class="fa-solid fa-truck-medical"></i>
+
+        <h2>Emergency</h2>
+
+        <p>Find emergency hospitals and ambulance services.</p>
+
+    </div>
+
+</section>
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>

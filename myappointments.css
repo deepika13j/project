@@ -1,0 +1,252 @@
+/*====================================
+      SMARTCARE MY APPOINTMENTS
+=====================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:
+        radial-gradient(
+            circle at top left,
+            #17233d 0%,
+            #0b1220 45%,
+            #050914 100%
+        );
+}
+
+/* Header */
+
+header{
+    width:100%;
+    background:#10192F;
+    color:#fff;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
+    border-bottom:1px solid rgba(212,175,55,.2);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#D4AF37;
+}
+
+.logo i{
+    margin-right:10px;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+}
+
+.container h1{
+    text-align:center;
+    color:#D4AF37;
+    margin-bottom:10px;
+}
+
+.container p{
+    text-align:center;
+    color:#B8C0D0;
+    margin-bottom:35px;
+}
+
+/* Appointment Card */
+
+.appointment-card{
+
+    background:#10192F;
+    border:1px solid rgba(212,175,55,.15);
+    border-radius:18px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+    border-left:6px solid #D4AF37;
+    transition:.3s;
+
+}
+
+.appointment-card:hover{
+
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(212,175,55,.2);
+
+}
+
+.appointment-card h2{
+
+    color:#D4AF37;
+    margin-bottom:15px;
+
+}
+
+.appointment-card p{
+
+    text-align:left;
+    margin:10px 0;
+    color:#E5E7EB;
+    font-size:16px;
+
+}
+
+.appointment-card i{
+
+    color:#D4AF37;
+    width:25px;
+
+}
+
+/* Status */
+
+.status{
+
+    display:inline-block;
+    padding:8px 16px;
+    background:#28a745;
+    color:#fff;
+    border-radius:20px;
+    font-size:14px;
+    margin-top:10px;
+
+}
+
+/* Buttons */
+
+.buttons{
+
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+
+}
+
+.buttons button{
+
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+
+}
+
+.download-btn{
+
+    background:#198754;
+    color:white;
+
+}
+
+.download-btn:hover{
+
+    background:#157347;
+
+}
+
+.cancel-btn{
+
+    background:#dc3545;
+    color:white;
+
+}
+
+.cancel-btn:hover{
+
+    background:#bb2d3b;
+
+}
+
+/* Home Button */
+
+.actions{
+
+    text-align:center;
+    margin-top:35px;
+
+}
+
+#homeBtn{
+
+    padding:15px 30px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(90deg,#D4AF37,#F4C430);
+    color:#0A1428;
+    font-weight:600;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+#homeBtn:hover{
+
+    background:linear-gradient(90deg,#F4C430,#FFD700);
+
+}
+
+/* Empty Message */
+
+.empty{
+
+    background:#10192F;
+    border:1px solid rgba(212,175,55,.15);
+    padding:40px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+
+}
+
+.empty i{
+
+    font-size:60px;
+    color:#8A93A6;
+    margin-bottom:20px;
+
+}
+
+.empty h2{
+
+    color:#B8C0D0;
+    margin-bottom:10px;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.container{
+
+    width:95%;
+
+}
+
+.buttons{
+
+    flex-direction:column;
+
+}
+
+.logo{
+
+    font-size:22px;
+
+}
+
+}
